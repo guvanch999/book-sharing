@@ -1,7 +1,7 @@
 
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "bookshare_db");
+$conn = mysqli_connect("localhost", "root", "fib11235813", "bookshare_db");
     if (isset($_POST['submit']))
     {
         $Fname=$_POST['fname'];
@@ -34,7 +34,7 @@ $conn = mysqli_connect("localhost", "root", "", "bookshare_db");
         if ($Password == $Cpassword)
         {
         
-        $q="insert into tbl_login values ('','$Fname','$Lname','$Bdate','$Gender','$Email','$Userrole','$Password','$img','$Clg','$status','$Phnumber')";
+        $q="insert into tbl_login values (default,'$Fname','$Lname','$Bdate','$Gender','$Email','$Userrole','$Password','$img','$Clg','$status','$Phnumber')";
         $c=mysqli_query($conn,$q);
         if ($c)
         {
@@ -155,7 +155,7 @@ $conn = mysqli_connect("localhost", "root", "", "bookshare_db");
                             <div class="col-2">
                                 <div class="input-group"data-validate = "Enter PhoneNumber">
                                     <label class="label">Phone Number</label>
-                                    <input class="input--style-4" type="text" id="phn" name="phnumber" pattern="[1-9]{1}[0-9]{9}">
+                                    <input class="input--style-4" type="text" id="phn" name="phnumber" pattern="[1-9]{1}[0-9]{8}">
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "bookshare_db");
+$conn = mysqli_connect("localhost", "root", "fib11235813", "bookshare_db");
 	if(isset($_POST['submit']))
 	{
 		$Email = $_POST['email'];
@@ -18,7 +18,7 @@ $conn = mysqli_connect("localhost", "root", "", "bookshare_db");
 			?>
 			<script>
 				alert("Login successfully");
-				window.location=("../../../adminPanel2/www.wrappixel.com/ampleadmin/ampleadmin-html/ampleadmin/index.php?name=$Email");
+				window.location=("../../../adminPanel2/my-room/ampleadmin/ampleadmin-html/ampleadmin/index.php?name=$Email");
 			</script>
 			<?php
 			}

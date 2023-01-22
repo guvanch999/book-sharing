@@ -1,0 +1,7 @@
+Gurnalyshy
+
+1) bookshare_db.sql database import etmeli(databazanyn ady 'bookshare_db' bolmaly);
+2) xampda htdocs a kody goymaly
+3) http://localhost/Online-Book-Sharing-Platform/Natours/afterS05/ shu linke gecmeli
+
+ishdan achyk bolsun!!
